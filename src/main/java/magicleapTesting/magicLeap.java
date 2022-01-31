@@ -94,7 +94,7 @@ public class magicLeap {
     @BeforeTest
     public void setUp() throws Exception {
 //        System.out.println(this.versionValue);
-        for (int i = 1; i < 240; i++) {
+        for (int i = 0; i < 1; i++) {
             for (int j = 0; j < 1; j++) {
 //        for (int i = 0; i < 1; i++) {
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -160,6 +160,7 @@ public class magicLeap {
 //            capabilities.setCapability("deviceName", "Google Pixel 2");
 //            capabilities.setCapability("platformVersion","9");
 
+            capabilities.setCapability("resolution","2048x1536");
 
 //                MutableCapabilities sauceOptions = new MutableCapabilities();
 //                sauceOptions.setCapability("extendedDebugging",true);
@@ -187,7 +188,7 @@ public class magicLeap {
 //            capabilities.setCapability("selenium_version","3.141.59");
 //            String[] file = {"2.jpg"};
 //            capabilities.setCapability("lambda:userFiles", file);
-//                capabilities.setCapability("tunnel",true);
+                capabilities.setCapability("tunnel",true);
 //                capabilities.setCapability("tunnelName","Vishnu");
 //                capabilities.setCapability("build","Start_MAP FIP - 2");
 //                capabilities.setCapability("fixedIP","10.242.32.153");
