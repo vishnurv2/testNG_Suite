@@ -20,8 +20,8 @@ import java.util.HashMap;
 public class magicLeap {
     // stage = mSAoW7DC449kuIz9mk0uYRpS6hgxpHqlgc1eRzXXPFNUChd0nZ
 
-    public String username = System.getenv("LT_USERNAME"); 
-    public String accesskey = System.getenv("LT_ACCESS_KEY");
+    public String username = System.getenv("LT_USER");
+    public String accesskey = System.getenv("LT_KEY");
     public RemoteWebDriver driver;
     public String gridURL = "@hub.lambdatest.com/wd/hub";
     String status;
