@@ -238,7 +238,7 @@ public class magicLeap {
               capabilities.setCapability("platform",System.getenv("LT_OPERATING_SYSTEM"));
               capabilities.setCapability("build", "Jenkins Plugin"); //+" ("+ dtf.format(now) +")"
             
-            
+                        System.out.println("OS -------------------------------- > " + System.getenv("LT_OPERATING_SYSTEM"));
 //            capabilities.setCapability("ie.compatibility",11001);
 
 //          capabilities.setCapability("performance",true);
