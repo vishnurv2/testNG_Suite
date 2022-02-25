@@ -180,15 +180,15 @@ public class magicLeap {
 //                caps.setCapability("browserstack.networkLogs", "true");
 //                capabilities.setCapability("enableNetworkThrottling", true);
 
-            capabilities.setCapability("browserName", "Chrome");
-            capabilities.setCapability("version","latest");
+//             capabilities.setCapability("browserName", "Chrome");
+//             capabilities.setCapability("version","latest");
 //                    capabilities.setCapability("version", "latest" + "-" + j);
 //            capabilities.setCapability("platform", "");
-            capabilities.setCapability("platformName","Windows 10");
+//             capabilities.setCapability("platformName","Windows 10");
 //            capabilities.setCapability("selenium_version","3.141.59");
 //            String[] file = {"2.jpg"};
 //            capabilities.setCapability("lambda:userFiles", file);
-                capabilities.setCapability("tunnel",true);
+//                 capabilities.setCapability("tunnel",true);
 //                capabilities.setCapability("tunnelName","Vishnu");
 //                capabilities.setCapability("build","Start_MAP FIP - 2");
 //                capabilities.setCapability("fixedIP","10.242.32.153");
@@ -228,12 +228,17 @@ public class magicLeap {
 //            capabilities.setCapability("tunnel", true);
 //            capabilities.setCapability("tunnelName","Vishnu");
 //            capabilities.setCapability("headless", true);
-            capabilities.setCapability("name","Windows 10 - " + ":  Count : " + i);
+//             capabilities.setCapability("name","Windows 10 - " + ":  Count : " + i);
 //            capabilities.setCapability("build","Loc");
 //            capabilities.setCapability("region","us");
 //            capabilities.setCapability("dedicatedProxy", true);
 //                capabilities.setCapability("build","Download H");
-             capabilities.setCapability("build", "IS"); //+" ("+ dtf.format(now) +")"
+              capabilities.setCapability("browserName", System.getenv("LT_BROWSER_NAME"));
+              capabilities.setCapability("version",System.getenv("LT_BROWSER_VERSION"));
+              capabilities.setCapability("platform",System.getenv("LT_OPERATING_SYSTEM"));
+              capabilities.setCapability("build", "Jenkins Plugin" + ); //+" ("+ dtf.format(now) +")"
+            
+            
 //            capabilities.setCapability("ie.compatibility",11001);
 
 //          capabilities.setCapability("performance",true);
