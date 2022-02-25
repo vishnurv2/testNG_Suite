@@ -16,7 +16,7 @@
             <class name="magicleapTesting.magicLeap"/>
         </classes>
     </test>
-
+<!-- 
     <test name="2">
         <parameter name="browser" value="Chrome"/>
         <parameter name="version" value="latest"/>
@@ -284,7 +284,7 @@
             <class name="magicleapTesting.magicLeap"/>
         </classes>
     </test>
-
+ -->
 <!--    <test name="21">-->
 <!--        <parameter name="browser" value="Edge"/>-->
 <!--        <parameter name="version" value="77.0"/>-->
