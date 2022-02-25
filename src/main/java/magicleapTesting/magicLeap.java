@@ -235,10 +235,10 @@ public class magicLeap {
 //                capabilities.setCapability("build","Download H");
               capabilities.setCapability("browserName", System.getenv("LT_BROWSER_NAME"));
               capabilities.setCapability("version",System.getenv("LT_BROWSER_VERSION"));
-              capabilities.setCapability("platform",System.getenv("LT_OPERATING_SYSTEM"));
+              capabilities.setCapability("platform",System.getenv("LT_PLATFORM"));
               capabilities.setCapability("build", "Jenkins Plugin"); //+" ("+ dtf.format(now) +")"
             
-                        System.out.println("OS -------------------------------- > " + System.getenv("LT_OPERATING_SYSTEM"));
+                        System.out.println("OS -------------------------------- > " + System.getenv("LT_PLATFORM"));
 //            capabilities.setCapability("ie.compatibility",11001);
 
 //          capabilities.setCapability("performance",true);
